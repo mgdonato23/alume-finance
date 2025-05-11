@@ -98,12 +98,12 @@ O servidor estará disponível em `http://localhost:3001`.
 - `POST /login`: Fazer login e obter um token JWT.
 
 ### **Estudantes**
-- `GET /students/profile`: Obter o perfil do estudante autenticado.
-- `PUT /students/update`: Atualizar o perfil do estudante autenticado.
+- `POST /me`: Obter o perfil do estudante autenticado.
+- `PUT /me`: Atualizar o perfil do estudante autenticado.
 
 ### **Simulações**
-- `POST /simulations/create`: Criar uma nova simulação.
-- `GET /simulations/list`: Listar todas as simulações do usuário autenticado.
+- `POST /simulations`: Criar uma nova simulação.
+- `GET /simulations`: Listar todas as simulações do usuário autenticado.
 
 ---
 

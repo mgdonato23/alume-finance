@@ -17,7 +17,7 @@ const studentController = new StudentController();
 /**
  * @swagger
  * /students/profile:
- *   get:
+ *   post:
  *     summary: Obter o perfil do estudante
  *     tags: [Students]
  *     security:

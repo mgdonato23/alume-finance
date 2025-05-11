@@ -16,7 +16,7 @@ const simulationController = new SimulationController();
 
 /**
  * @swagger
- * /simulations/create:
+ * /simulations:
  *   post:
  *     summary: Criar uma nova simulação
  *     tags: [Simulations]
@@ -54,7 +54,7 @@ router.post(
 
 /**
  * @swagger
- * /simulations/list:
+ * /simulations:
  *   get:
  *     summary: Obter todas as simulações do usuário autenticado
  *     tags: [Simulations]
