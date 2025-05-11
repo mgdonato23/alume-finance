@@ -118,29 +118,9 @@ Use esta interface para explorar e testar os endpoints da API.
 
 ---
 
-## **Contribuição**
+## 📄 Licença
 
-Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
-
-1. Faça um fork do repositório.
-2. Crie uma branch para sua feature:
-   ```bash
-   git checkout -b minha-feature
-   ```
-3. Faça commit das suas alterações:
-   ```bash
-   git commit -m "Minha nova feature"
-   ```
-4. Envie para o repositório remoto:
-   ```bash
-   git push origin minha-feature
-   ```
-5. Abra um Pull Request.
+Este projeto está sob a licença [MIT](LICENSE).
 
 ---
 
-## **Licença**
-
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.
-
----
