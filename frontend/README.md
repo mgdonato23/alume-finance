@@ -100,18 +100,6 @@ src/
 
 ---
 
-## 🧪 Testes
-
-Para executar os testes (caso configurados):
-
-```bash
-npm run test
-# ou
-yarn test
-```
-
----
-
 ## 📄 Licença
 
 Este projeto está sob a licença [MIT](LICENSE).
