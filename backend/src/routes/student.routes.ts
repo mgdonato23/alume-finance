@@ -16,8 +16,8 @@ const studentController = new StudentController();
 
 /**
  * @swagger
- * /students/profile:
- *   post:
+ * /me:
+ *   get:
  *     summary: Obter o perfil do estudante
  *     tags: [Students]
  *     security:
@@ -37,11 +37,11 @@ const studentController = new StudentController();
  *       401:
  *         description: Não autorizado
  */
-router.post("/me", authenticate, studentController.getProfile);
+router.get("/me", authenticate, studentController.getProfile);
 
 /**
  * @swagger
- * /students/update:
+ * /me:
  *   put:
  *     summary: Atualizar o perfil do estudante
  *     tags: [Students]
