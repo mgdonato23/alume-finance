@@ -75,8 +75,8 @@ src/
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/alume-finance-frontend.git
-   cd alume-finance-frontend
+   git clone https://github.com/seu-usuario/alume-finance.git
+   cd alume-finance/frontend
    ```
 
 2. Instale as dependências:

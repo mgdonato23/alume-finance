@@ -39,8 +39,8 @@ A **Alume Finance API** é uma aplicação backend desenvolvida para gerenciar a
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/alume-finance-api.git
-   cd alume-finance-api
+   git clone https://github.com/seu-usuario/alume-finance.git
+   cd alume-finance/backend
    ```
 
 2. Instale as dependências:
@@ -54,7 +54,7 @@ A **Alume Finance API** é uma aplicação backend desenvolvida para gerenciar a
 
 ## **Configuração**
 
-1. Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+1. Crie um arquivo `.env` na pasta `backend` com as seguintes variáveis:
    ```env
    PORT=3001
    DATABASE_URL="postgresql://<usuario>:<senha>@localhost:5432/alume_finance?schema=public"
@@ -98,7 +98,7 @@ O servidor estará disponível em `http://localhost:3001`.
 - `POST /login`: Fazer login e obter um token JWT.
 
 ### **Estudantes**
-- `POST /me`: Obter o perfil do estudante autenticado.
+- `GET /me`: Obter o perfil do estudante autenticado.
 - `PUT /me`: Atualizar o perfil do estudante autenticado.
 
 ### **Simulações**
@@ -120,7 +120,7 @@ Use esta interface para explorar e testar os endpoints da API.
 
 ## 📄 Licença
 
-Este projeto está sob a licença [MIT](LICENSE).
+Este projeto está sob a licença [MIT](../LICENSE).
 
 ---
 
