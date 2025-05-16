@@ -95,15 +95,6 @@ src/
 
 4. Acesse a aplicação no navegador:
    ```
-   http://localhost:5173
+   http://localhost:3000
    ```
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença [MIT](LICENSE).
-
----
-
 
