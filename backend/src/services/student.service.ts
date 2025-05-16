@@ -29,7 +29,6 @@ export class StudentService {
       email?: string
     },
   ) {
-    // Check if email is already in use by another student
     if (data.email) {
       const existingStudent = await prisma.estudante.findFirst({
         where: {
@@ -43,7 +42,6 @@ export class StudentService {
       }
     }
 
-    // Update student
     const updatedStudent = await prisma.estudante.update({
       where: { id },
       data,

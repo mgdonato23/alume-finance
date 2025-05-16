@@ -10,7 +10,6 @@ export class AuthService {
     email: string
     senha: string
   }) {
-    // Check if email already exists
     const existingStudent = await prisma.estudante.findUnique({
       where: { email: data.email },
     })
@@ -19,10 +18,8 @@ export class AuthService {
       throw new AppError("Email já está em uso", 400)
     }
 
-    // Hash password
     const hashedPassword = await bcrypt.hash(data.senha, 10)
 
-    // Create new student
     const student = await prisma.estudante.create({
       data: {
         nome: data.nome,
@@ -43,7 +40,6 @@ export class AuthService {
   }
 
   public async login(email: string, senha: string) {
-    // Find student by email
     const student = await prisma.estudante.findUnique({
       where: { email },
     })
@@ -52,14 +48,12 @@ export class AuthService {
       throw new AppError("Credenciais inválidas", 401)
     }
 
-    // Verify password
     const isPasswordValid = await bcrypt.compare(senha, student.senha)
 
     if (!isPasswordValid) {
       throw new AppError("Credenciais inválidas", 401)
     }
 
-    // Generate JWT token (5 minutes expiration)
     const token = jwt.sign({ id: student.id }, process.env.JWT_SECRET || "default_secret", { expiresIn: "5m" })
 
     return {
