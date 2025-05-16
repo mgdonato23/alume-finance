@@ -116,11 +116,4 @@ http://localhost:3001/api-docs
 
 Use esta interface para explorar e testar os endpoints da API.
 
----
-
-## 📄 Licença
-
-Este projeto está sob a licença [MIT](../LICENSE).
-
----
 
